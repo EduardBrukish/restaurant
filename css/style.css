@@ -1,0 +1,411 @@
+@import "./reset.css";
+
+@import "./sprites.css";
+
+@font-face {
+    font-family: "Lato";
+    src: url("/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "BookBold";
+    src: url("/fonts/Gentium_Book_Basic/GentiumBookBasic-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "yeseva";
+    src: url("/fonts/yeseva/yesevaone.ttf") format("truetype");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background: aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 123px;
+    background-image: url(../img/header_bg.png);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+nav {
+    height: 100%;
+}
+
+header ul {
+    display: flex;
+    height: 100%;
+}
+
+.header-nav li {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.31rem;
+    font-family: "BookBold";
+    color: #fff;
+}
+
+.navigation li {
+    margin-left: 51px;
+}
+
+.navigation li:hover {
+    border-top: 3px solid #c2c0b8;
+    border-bottom: 3px solid transparent;
+    transition: 0.2s;
+}
+
+.social li {
+    margin-right: 17px;
+}
+
+.social {
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+/* promo */
+
+.promo {
+    padding: 215px 0 142px;
+    background-image: url('../img/content_bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.promo .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    max-width: 970px;
+    margin-bottom: 25px;
+    font-size: 5.625rem;
+    line-height: 7.35rem;
+    font-family: "yeseva";
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+}
+
+.content-divider {
+    margin-bottom: 34px;
+}
+
+.reservation-btn {
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+    width: 486px;
+}
+
+.reservation-btn a {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.reservation-btn div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 228px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.reservation-book-a-table {
+    background-color: rgba(0, 0, 0, 0.702);
+    border: solid 1px rgb(0, 0, 0);
+    opacity: 0.8;
+}
+
+.reservation-see-the-menu {
+    background-color: rgba(255, 255, 255, 0.278);
+    border: solid 1px rgb(255, 255, 255);
+    opacity: 0.702;
+}
+
+/* about */
+
+.about {
+    padding: 54px 99px 31px 143px;
+    background-image: url('../img/about_bg_pattern.png'), url(../img/about_bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+    padding-top: 49px;
+}
+
+.about-food h2 {
+    margin-bottom: 17px;
+    font-size: 2.25rem;
+    font-family: "yeseva";
+    color: #cc9900;
+}
+
+.about .divider-gold {
+    margin-bottom: 26px;
+}
+
+.about-food p {
+    margin-bottom: 49px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.about-food img {
+    margin-left: 70px;
+}
+
+/* ingridients */
+
+.ingridients {
+    padding: 100px 72px;
+    background-image: url('../img/ingredients_bg.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.ingridients .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ingridients-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 570px;
+    padding: 79px 76px;
+    background-image: url('../img/ingredients_text_bg.png')
+}
+
+.ingridients-content h2 {
+    margin-bottom: 18px;
+    font-size: 2.25rem;
+    font-family: "yeseva";
+    color: #fff;
+}
+
+.ingridients-content .divider-white {
+    margin-bottom: 24px;
+}
+
+.ingridients-content p {
+    margin-bottom: 68px;
+    max-width: 420px;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+.ingridients-content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* menu */
+
+.menu {
+    padding: 103px 133px 31px 131px;
+    background-image: url('../img/menu_2_pattern.png'), url('../img/menu_2_bg.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.menu-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    max-height: 994px;
+}
+
+.menu-content h3 {
+    margin-bottom: 17px;
+    font-size: 2.25rem;
+    font-family: "yeseva";
+    color: #cc9900;
+}
+
+.menu-content .menu-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.menu-content-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 11px;
+    border: solid 1px transparent;
+}
+
+.price {
+    display: flex;
+}
+
+.menu-content-item-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9px;
+    font-size: 1.3125rem;
+    font-family: "yeseva";
+    color: #cc9900;
+}
+
+.menu-line {
+    margin-bottom: 12px
+}
+
+.menu-content ul {
+    margin-bottom: 56px
+}
+
+.special {
+    position: relative;
+    padding: 11px;
+    border-style: solid;
+    border-width: 1px;
+    border-image: url('../img/menu_2_featured_item_border.png') 1 repeat repeat;
+}
+
+.special-bg {
+    position: absolute;
+    top: -23px;
+    right: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 22px;
+    font-size: 0.875rem;
+    color: #fff;
+    background-image: url('../img/menu_2_featured_item_bg.png');
+}
+
+/* reviews */
+
+.reviews {
+    padding: 100px 0 100px;
+    background-image: url('../img/reviews_bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.reviews .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 79px 70px 105px;
+    background-image: url('../img/reviews_text_bg.png');
+    background-position: center;
+    background-size: contain;
+}
+
+.reviews-content h2 {
+    margin-bottom: 18px;
+    font-size: 2.25rem;
+    font-family: "yeseva";
+    color: #fff;
+
+}
+
+.divider-white {
+    margin-bottom: 19px;
+}
+
+.quotes {
+    position: absolute;
+    top: 161px;
+    left: 28px;
+    font-size: 6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f2f4f4;
+}
+
+.reviews-content-text {
+    max-width: 630px;
+    margin-bottom: 34px;
+    font-size: 1.5625rem;
+    line-height: 2.8125rem;
+    font-family: "BookBold";
+    text-align: center;
+    color: #dde0df;
+}
+
+.reviews-content-inc {
+    font-size: 1.125rem;
+    color: #fff;
+}

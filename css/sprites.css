@@ -1,0 +1,90 @@
+.menu-line,
+.divider-gold,
+.divider-white,
+.content-divider,
+.footer-divider,
+.cards,
+.twitter-icon,
+.youtube-icon,
+.calendar,
+.dollar,
+.facebook-icon,
+.selector {
+	display: inline-block;
+	background: url('../img/sprites.png') no-repeat;
+	overflow: hidden;
+	text-indent: -9999px;
+	text-align: left;
+}
+
+.menu-line {
+	background-position: -1px -0px;
+	width: 430px;
+	height: 1px;
+}
+
+.divider-gold {
+	background-position: -1px -2px;
+	width: 247px;
+	height: 24px;
+}
+
+.divider-white {
+	background-position: -1px -27px;
+	width: 247px;
+	height: 24px;
+}
+
+.content-divider {
+	background-position: -1px -52px;
+	width: 232px;
+	height: 43px;
+}
+
+.footer-divider {
+	background-position: -1px -96px;
+	width: 199px;
+	height: 19px;
+}
+
+.cards {
+	background-position: -249px -2px;
+	width: 120px;
+	height: 15px;
+}
+
+.twitter-icon {
+	background-position: -370px -2px;
+	width: 19px;
+	height: 16px;
+}
+
+.youtube-icon {
+	background-position: -390px -2px;
+	width: 18px;
+	height: 21px;
+}
+
+.calendar {
+	background-position: -409px -2px;
+	width: 13px;
+	height: 14px;
+}
+
+.dollar {
+	background-position: -409px -17px;
+	width: 11px;
+	height: 18px;
+}
+
+.facebook-icon {
+	background-position: -249px -18px;
+	width: 10px;
+	height: 20px;
+}
+
+.selector {
+	background-position: -421px -17px;
+	width: 8px;
+	height: 5px;
+}
